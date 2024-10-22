@@ -1,0 +1,24 @@
+###Problem 1
+
+food_charge = float(input('Enter meal charge: '))   #Asks user to input meal charge.
+
+tip = 0.18 * food_charge    #Calculates the tip.
+
+sales_tax = 0.07 * food_charge   #Calculates the sales tax
+
+total_price = food_charge + tip + sales_tax   #Calculates the total charge of the meal with tip and sales tax.
+
+print('The food charge is ${:.2f}. An 18% tip is ${:.2f} and the sales tax is ${:.2f}. The total price is ${:.2f}'.format(food_charge, tip, sales_tax, total_price))   #Displays all of the values.
+ 
+###Problem 2
+
+time_now = float(input('Enter current time: '))   #Asks user to input the current time.
+
+hours_wait = float(input('Enter number of hours to wait for the alarm: '))   #Asks user to input the amount of hours to wait.
+
+alarm_go_off = (time_now + hours_wait) % 24   #Cacluates the time the alarm will go off.
+
+print('If the current time is {:.2f} and we set the alarm for {:.2f} hours, the alarm will go off at {:.2f}.'.format(time_now, hours_wait, alarm_go_off))   #Displays the results.
+
+##All tasks have been completed.
+##Algorithm end.
